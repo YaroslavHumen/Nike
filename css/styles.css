@@ -434,7 +434,7 @@
       background: rgba(200, 80, 192, 0.08);
   }
 
-  
+
 
   .order-btn {
       background: linear-gradient(135deg, var(--accent1), var(--accent2));
@@ -510,6 +510,24 @@
       -webkit-text-fill-color: transparent;
       letter-spacing: 4px;
       text-align: right;
+  }
+
+  .footer-logo {
+      width: 108;
+      height: 81;
+      top: 2751px;
+      left: 1180px;
+      opacity: 1;
+
+  }
+
+  .footer-badge {
+      width: 178;
+      height: 86;
+      top: 2813px;
+      left: 1206px;
+      opacity: 1;
+
   }
 
   /* ── SCROLL REVEAL ── */
