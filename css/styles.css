@@ -7,6 +7,7 @@
       --text-date: #D8D8D8;
       --placeholder: #959595;
       --line-footer: #9b9b9b;
+      --border: #383a48;
 
       --accent1: #c850c0;
       --accent2: #4158d0;
@@ -101,17 +102,17 @@
       font-weight: 700;
   }
 
-  .lang-btn:hover,
-  .lang-btn-ua:hover {
-      border-color: var(--accent1);
-      color: var(--text-header);
-  }
-
   .lang-btn-ua {
     font-weight: 700;
   }
   .lang-btn-accent-ua {
       font-weight: 300;
+  }
+
+  .lang-btn:hover,
+  .lang-btn-ua:hover {
+      border-color: var(--accent1);
+      color: var(--text-header);
   }
 
   /* ── HERO ── */
