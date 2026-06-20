@@ -6,6 +6,7 @@
       --btn: #8E32C6;
       --text-date: #D8D8D8;
       --placeholder: #959595;
+      --line-footer: #9b9b9b;
 
       --accent1: #c850c0;
       --accent2: #4158d0;
@@ -15,7 +16,6 @@
       --text: #f0e8ff;
       --muted: #a898c8;
       --card-bg: rgba(255, 255, 255, 0.04);
-      --border: rgba(200, 80, 192, 0.25);
   }
 
   * {
@@ -87,16 +87,31 @@
       background: none;
       border: 1px solid var(--border);
       color: var(--text-header);
+      font-family: Roboto;
+      font-weight: 300;
+      font-style: Light;
+      font-size: 24px;
       padding: 6px 14px;
       border-radius: 20px;
-      font-size: 0.78rem;
       cursor: pointer;
       transition: all .3s;
   }
 
-  .lang-btn:hover {
+  .lang-btn-accent {
+      font-weight: 700;
+  }
+
+  .lang-btn:hover,
+  .lang-btn-ua:hover {
       border-color: var(--accent1);
       color: var(--text-header);
+  }
+
+  .lang-btn-ua {
+    font-weight: 700;
+  }
+  .lang-btn-accent-ua {
+      font-weight: 300;
   }
 
   /* ── HERO ── */
@@ -159,7 +174,7 @@
   }
 
   .btn-primary {
-      width: 255px;
+      width: 275px;
       padding: 20px 61px;
       margin-top: 48px;
       background-color: var(--btn);
@@ -182,7 +197,7 @@
       box-shadow: 0 0 50px rgba(200, 80, 192, 0.65);
   }
 
-  /* ── SECTION FEATURE ── */
+  /* ── SECTION FEATURE / Переваги ── */
   .features {
       background-image: url(../images/features.png);
       background-repeat: no-repeat;
@@ -224,7 +239,7 @@
       color: var(--white);
   }
 
-  /* ── REVIEWS ── */
+  /* ── REVIEWS / Відгуки ── */
   .reviews {
       background-image: url(../images/review.png);
       background-repeat: no-repeat;
@@ -332,7 +347,7 @@
       color: var(--text-date);
   }
 
-  /* ── ORDER ── */
+  /* ── ORDER / зАМОВЛЕННЯ ── */
   .order {
       background-image: url(../images/order.jpg);
       background-repeat: no-repeat;
@@ -385,7 +400,7 @@
   .btn {
       position: absolute;
       top: 2200px;
-      left: 886px;
+      left: 1056px;
       color: var(--text-header);
       background-color: var(--white);
       border-radius: 40px;
@@ -465,20 +480,32 @@
       border-top: 1px solid var(--border);
   }
 
-  .footer-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      max-width: 800px;
-      margin: 0 auto 40px;
+  .footer-links-container {
+      display: flex;
+      font-family: Roboto;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 24px;
+      color: var(--white);
+      justify-content: space-between;
+      padding-bottom: 20px;
   }
 
-  .footer-label {
-      font-size: 0.7rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 12px;
+  .footer-links,
+  .footer-links-item {
+      font-family: Roboto;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 24px;
+      color: var(--white);
+      text-decoration: underline;
+      text-align: right;
+      font-family: Roboto;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-decoration-style: solid;
+      text-decoration-offset: 0%;
+      text-decoration-thickness: 0%;
   }
 
   .footer-links a {
@@ -490,26 +517,23 @@
       transition: color .3s;
   }
 
-  .footer-links a:hover {
+  .footer-links-item:hover {
       color: var(--neon);
   }
 
   .footer-bottom {
-      text-align: center;
-      font-size: 0.75rem;
-      color: rgba(168, 152, 200, 0.4);
-      border-top: 1px solid var(--border);
-      padding-top: 24px;
+      border-top: 1px solid var(--line-footer);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
   }
 
-  .footer-nike {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2rem;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      letter-spacing: 4px;
-      text-align: right;
+  .footer-text {
+      font-family: Roboto;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 18px;
+      color: var(--white);
   }
 
   .footer-logo {
@@ -522,26 +546,11 @@
   }
 
   .footer-badge {
-      width: 178;
-      height: 86;
-      top: 2813px;
-      left: 1206px;
-      opacity: 1;
-
+      font-family: PT Serif;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 24px;
+      color: var(--white);
+      padding-left: 28px;
+      margin-top: -18px;
   }
-
-  /* ── SCROLL REVEAL ── */
-  .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity .8s ease, transform .8s ease;
-  }
-
-  .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-  }
-
-.review-card:hover {
-    transform: scale(1.05);
-}
