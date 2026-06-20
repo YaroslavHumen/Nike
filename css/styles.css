@@ -165,7 +165,7 @@
 
   .hero-desc {
       margin-top: 16px;
-      width: 510px;
+      width: 610px;
       font-family: Roboto;
       font-weight: 300;
       font-style: Regular;
@@ -279,6 +279,9 @@
   }
 
   .review-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
       background: linear-gradient(136.55deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.5%, #CC5EC2 100%);
       border-radius: 20px;
       padding: 28px 24px;
@@ -537,6 +540,7 @@
   }
 
   .footer-logo {
+    margin-top: 10px;
       width: 108;
       height: 81;
       top: 2751px;
