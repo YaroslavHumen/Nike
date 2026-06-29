@@ -82,9 +82,10 @@
                 </div>
                 <h2 class="title-reviews">Reviews</h2>
                 <div class="reviews-cards-list">
+
+                    <!-- КАРТКА 1 -->
                     <div class="review-card">
-                        <p class="review-text">Sneakers are very comfortable and well painted, nothing has worn off in a
-                            year.</p>
+                        <p class="review-text">Sneakers are very comfortable and well painted, nothing has worn off in a year.</p>
                         <p class="review-date">25.11</p>
                         <div class="review-author">
                             <img class="img-author" src="./images/author1.jpg" alt="author1">
@@ -93,7 +94,11 @@
                                 <p class="author-place">With us from 2018</p>
                             </div>
                         </div>
+                        <!-- Кнопка відкриття модалки -->
+                        <a href="#modal-1" class="review-read-more">Read more ↗</a>
                     </div>
+
+                    <!-- КАРТКА 2 -->
                     <div class="review-card">
                         <p class="review-text">I'm very happy with this color scheme. They match all my clothes.</p>
                         <p class="review-date">05.01</p>
@@ -104,7 +109,10 @@
                                 <p class="author-place">With us from 2020</p>
                             </div>
                         </div>
+                        <a href="#modal-2" class="review-read-more">Read more ↗</a>
                     </div>
+
+                    <!-- КАРТКА 3 -->
                     <div class="review-card">
                         <p class="review-text">Just right if you need to go to a party. I use them actively, the paint
                             is super.</p>
@@ -116,10 +124,99 @@
                                 <p class="author-place">With us from 2019</p>
                             </div>
                         </div>
+                        <a href="#modal-3" class="review-read-more">Read more ↗</a>
                     </div>
+
                 </div>
             </div>
         </section>
+        <!-- МОДАЛКА 1 — John Teylor -->
+        <div class="modal" id="modal-1">
+            <div class="modal-box modal-box--1">
+                <a href="#reviews" class="modal-close" aria-label="Close">✕</a>
+                <div class="modal-header">
+                    <img class="modal-avatar" src="./images/author1.jpg" alt="John Teylor">
+                    <div>
+                        <h3 class="modal-author-name">John Teylor</h3>
+                        <p class="modal-author-meta">With us from 2018 · 25.11</p>
+                        <div class="modal-stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="modal-text">
+                    Sneakers are very comfortable and well painted, nothing has worn off in a year.
+                    I ordered a custom colorway with turquoise and white — and it looks exactly like
+                    the preview. The paint quality is outstanding, no cracking even after daily use
+                    in various weather conditions. Would definitely recommend ColoRave to anyone who
+                    wants truly unique sneakers. Already planning my second pair!
+                </p>
+                <div class="modal-tag-row">
+                    <span class="modal-tag">Comfort ✓</span>
+                    <span class="modal-tag">Paint Quality ✓</span>
+                    <span class="modal-tag">Daily Use ✓</span>
+                </div>
+                <a href="#order" class="modal-cta">Order my Nike</a>
+            </div>
+            <!-- Клік по фону закриває модалку -->
+            <a href="#reviews" class="modal-backdrop" aria-label="Close modal"></a>
+        </div>
+
+        <!-- МОДАЛКА 2 — Elizabeth Garsia -->
+        <div class="modal" id="modal-2">
+            <div class="modal-box modal-box--2">
+                <a href="#reviews" class="modal-close" aria-label="Close">✕</a>
+                <div class="modal-header">
+                    <img class="modal-avatar" src="./images/author2.jpg" alt="Elizabeth Garsia">
+                    <div>
+                        <h3 class="modal-author-name">Elizabeth Garsia</h3>
+                        <p class="modal-author-meta">With us from 2020 · 05.01</p>
+                        <div class="modal-stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="modal-text">
+                    I'm very happy with this color scheme. They match all my clothes.
+                    I chose a dusty pink and lavender combination and the result is just stunning.
+                    The website made it so easy to visualize the final look before ordering.
+                    The sneakers arrived in two weeks, beautifully packaged. My friends keep
+                    asking where I bought them — I've already sent three people to ColoRave!
+                </p>
+                <div class="modal-tag-row">
+                    <span class="modal-tag">Style ✓</span>
+                    <span class="modal-tag">Fast Delivery ✓</span>
+                    <span class="modal-tag">Recommended ✓</span>
+                </div>
+                <a href="#order" class="modal-cta">Order my Nike</a>
+            </div>
+            <a href="#reviews" class="modal-backdrop" aria-label="Close modal"></a>
+        </div>
+
+        <!-- МОДАЛКА 3 — Tom Maquare -->
+        <div class="modal" id="modal-3">
+            <div class="modal-box modal-box--3">
+                <a href="#reviews" class="modal-close" aria-label="Close">✕</a>
+                <div class="modal-header">
+                    <img class="modal-avatar" src="./images/author3.jpg" alt="Tom Maquare">
+                    <div>
+                        <h3 class="modal-author-name">Tom Maquare</h3>
+                        <p class="modal-author-meta">With us from 2019 · 18.06</p>
+                        <div class="modal-stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="modal-text">
+                    Just right if you need to go to a party. I use them actively, the paint is super.
+                    I went for a bold yellow-orange-red gradient and honestly it's the most eye-catching
+                    pair I've ever owned. Wore them to three different events and got compliments every
+                    single time. The soles are sturdy, the colors stay vivid. I've been a loyal customer
+                    since 2019 and each order has been consistently excellent.
+                </p>
+                <div class="modal-tag-row">
+                    <span class="modal-tag">Bold Design ✓</span>
+                    <span class="modal-tag">Durability ✓</span>
+                    <span class="modal-tag">Loyal Customer ✓</span>
+                </div>
+                <a href="#order" class="modal-cta">Order my Nike</a>
+            </div>
+            <a href="#reviews" class="modal-backdrop" aria-label="Close modal"></a>
+        </div>
 
         <!-- ORDER -->
         <section class="order" id="order">
@@ -172,7 +269,8 @@
                 </ul>
             </div>
             <div class="footer-bottom">
-                <p class="footer-text">2022 ColoRawe @All rights reserved. &nbsp;·&nbsp; <a href="#"></a>Privacy Policy</a> <br>United States</p>
+                <p class="footer-text">2022 ColoRawe @All rights reserved. &nbsp;·&nbsp; <a href="#"></a>Privacy
+                    Policy</a> <br>United States</p>
                 <div>
                     <div class="footer-logo">
                         <a href="./index.html">
